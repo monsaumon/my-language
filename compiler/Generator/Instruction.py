@@ -1,0 +1,43 @@
+from enum import Enum, auto
+
+class Instruction(Enum):
+    Exit = auto()
+    Call = auto()
+    Alloc = auto()
+    Return = auto()
+    Jump = auto()
+    ConditionJump = auto()
+    Print = auto()
+    PrintLine = auto()
+    
+    LogicalOr = auto()
+    LogicalAnd = auto()
+    Add = auto()
+    Subtract = auto()
+    Multiply = auto()
+    Divide = auto()
+    Modulo = auto()
+    Equal = auto()
+    NotEqual = auto()
+    
+    LessThan = auto()
+    GreaterThan = auto()
+    LessEqual = auto()
+    GreaterEqual = auto()
+    Absolute = auto()
+    ReverseSign = auto()
+    
+    GetElement = auto()
+    SetElement = auto()
+    GetGlobal = auto()
+    SetGlobal = auto()
+    GetLocal = auto()
+    SetLocal = auto()
+    
+    PushNull = auto()
+    PushBoolean = auto()
+    PushNumber = auto()
+    PushString = auto()
+    PushArray = auto()
+    PushMap = auto()
+    PopOperand = auto()
